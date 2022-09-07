@@ -6,28 +6,23 @@ Simple BAT script which views the wifi passwords of previously connected network
 Run the batchfile .
 ```
 created by mr-d3falt
-
-Profiles on interface Wireless network:
-
-Group policy profiles (read only)
----------------------------------
-    <None>
-
-User profiles
--------------
+.
+################################################
     All User Profile     : wifi_name_examle1
     All User Profile     : wifi_name_examle2
     All User Profile     : wifi_name_examle3
-
-To check WIFI password, run the following command:
-" netsh wlan show profile name=SSID key=clear | findstr "Key Content" "
+################################################
+.
+To check WIFI password, type wifi SSID.
+.
+SSID:
 ```
-Then run the following command:
+Then type the SSID of wifi & hit enter to obtain the password:
 ```
-netsh wlan show profile name=wifi_name_examle1 key=clear | findstr "Key Content"
+SSID: wifi_name_examle1
 ```
 Output:
 ```
-C:\Users\User> netsh wlan show profile name=wifi_name_examle1 key=clear | findstr "Key Content"
+SSID: wifi_name_examle1
     Key Content            : wifipasswd123
 ```
